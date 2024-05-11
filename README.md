@@ -4,6 +4,10 @@
 
 
 
-[example of win](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K)
+[example of brain-even win](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K)
 
-[example of loss](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
+[example of brain-even loss](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
+
+[example of brain-calc win](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
+
+[example of brain-calc loss](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
