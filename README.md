@@ -15,3 +15,7 @@
 [example of brain-gcd win](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9)
 
 [example of brain-gcd loss](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
+
+[example of brain-progression win](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd)
+
+[example of brain-progression loss](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
