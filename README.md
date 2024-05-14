@@ -11,3 +11,7 @@
 [example of brain-calc win](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
 
 [example of brain-calc loss](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
+
+[example of brain-gcd win](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9)
+
+[example of brain-gcd loss](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
