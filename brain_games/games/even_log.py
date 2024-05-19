@@ -8,7 +8,7 @@ max_num = 100
 amount_ques = 3
 
 
-def even_greeting():
+def even_start():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
@@ -37,7 +37,7 @@ def even_ques_gen(min, max, amount):
 
 def brain_even():
     user_name = welcome_user()
-    even_greeting()
+    even_start()
     ques_answ_list = even_ques_gen(min_num, max_num, amount_ques)
     check_win_list = question_answer(ques_answ_list)
     is_win(check_win_list, user_name)

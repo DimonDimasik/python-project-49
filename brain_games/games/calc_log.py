@@ -8,7 +8,7 @@ max_num = 15
 amount_ques = 3
 
 
-def calc_greeting():
+def calc_start():
     print('What is the result of the expression?')
 
 
@@ -49,7 +49,7 @@ def calculate_ques_gen(min, max, amount):
 
 def brain_calc():
     user_name = welcome_user()
-    calc_greeting()
+    calc_start()
     ques_answ_list = calculate_ques_gen(min_num, max_num, amount_ques)
     check_win_list = question_answer(ques_answ_list)
     is_win(check_win_list, user_name)

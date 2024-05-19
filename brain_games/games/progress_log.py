@@ -8,7 +8,7 @@ max_num = 50
 amount_ques = 3
 
 
-def progress_greeting():
+def progress_start():
     print('What number is missing in the progression?')
 
 
@@ -43,7 +43,7 @@ def prog_ques_gen(min, max, amount):
 
 def brain_progress():
     user_name = welcome_user()
-    progress_greeting()
+    progress_start()
     ques_answ_list = prog_ques_gen(min_num, max_num, amount_ques)
     check_win_list = question_answer(ques_answ_list)
     is_win(check_win_list, user_name)

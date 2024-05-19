@@ -19,3 +19,7 @@
 [example of brain-progression win](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd)
 
 [example of brain-progression loss](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
+
+[example of brain-prime win](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el)
+
+[example of brain-prime loss](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx)
