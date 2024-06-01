@@ -1,15 +1,9 @@
 from random import randint
-from brain_games.cli import welcome_user
-from .game_logic import question_answer, is_win
 
 
 min_num = 2
 max_num = 100
 amount_ques = 3
-
-
-def prime_start():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def prime_ques_gen(min, max, amount):
@@ -43,11 +37,3 @@ def prime_ques_gen(min, max, amount):
         i += 1
 
     return ques_list
-
-
-def brain_prime():
-    user_name = welcome_user()
-    prime_start()
-    ques_answ_list = prime_ques_gen(min_num, max_num, amount_ques)
-    check_win_list = question_answer(ques_answ_list)
-    is_win(check_win_list, user_name)

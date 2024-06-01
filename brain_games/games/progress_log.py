@@ -1,15 +1,9 @@
 from random import randint
-from brain_games.cli import welcome_user
-from .game_logic import question_answer, is_win
 
 
 min_num = 1
 max_num = 50
 amount_ques = 3
-
-
-def progress_start():
-    print('What number is missing in the progression?')
 
 
 def prog_ques_gen(min, max, amount):
@@ -39,11 +33,3 @@ def prog_ques_gen(min, max, amount):
         i += 1
 
     return progress_list
-
-
-def brain_progress():
-    user_name = welcome_user()
-    progress_start()
-    ques_answ_list = prog_ques_gen(min_num, max_num, amount_ques)
-    check_win_list = question_answer(ques_answ_list)
-    is_win(check_win_list, user_name)

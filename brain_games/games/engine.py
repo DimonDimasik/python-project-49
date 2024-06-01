@@ -1,3 +1,24 @@
+from brain_games.cli import welcome_user
+
+
+def calc_start():
+    print('What is the result of the expression?')
+
+
+def even_start():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
+def gcd_start():
+    print('Find the greatest common divisor of given numbers.')
+
+
+def prime_start():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
+def progress_start():
+    print('What number is missing in the progression?')
 
 
 def question_answer(ques_list):
@@ -24,3 +45,11 @@ def is_win(ques_list, name):
     else:
         print(f"'{ques_list[1]}' is wrong answer ;(. Correct answer was '{ques_list[2]}'.")
         print(f"Let's try again, {name}")
+
+
+def game_engine(ques_gen, min, max, amount, start):
+    user_name = welcome_user()
+    start()
+    ques_answ_list = ques_gen(min, max, amount)
+    check_win_list = question_answer(ques_answ_list)
+    is_win(check_win_list, user_name)

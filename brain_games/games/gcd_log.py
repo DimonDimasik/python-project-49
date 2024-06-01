@@ -1,15 +1,9 @@
 from random import randint
-from brain_games.cli import welcome_user
-from .game_logic import question_answer, is_win
 
 
 max_num = 100
 min_num = 1
 amount_ques = 3
-
-
-def gcd_start():
-    print('Find the greatest common divisor of given numbers.')
 
 
 def gcd_ques_gen(max, min, amount):
@@ -45,11 +39,3 @@ def gcd_ques_gen(max, min, amount):
         i += 2
 
     return ques_list
-
-
-def brain_gcd():
-    user_name = welcome_user()
-    gcd_start()
-    ques_answ_list = gcd_ques_gen(max_num, min_num, amount_ques)
-    check_win_list = question_answer(ques_answ_list)
-    is_win(check_win_list, user_name)

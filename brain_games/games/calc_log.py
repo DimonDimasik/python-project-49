@@ -1,6 +1,4 @@
 from random import randint
-from brain_games.cli import welcome_user
-from .game_logic import question_answer, is_win
 
 
 min_num = 1
@@ -8,11 +6,7 @@ max_num = 15
 amount_ques = 3
 
 
-def calc_start():
-    print('What is the result of the expression?')
-
-
-def calculate_ques_gen(min, max, amount):
+def calc_ques_gen(min, max, amount):
     num_list = []
     i = 1
     while i <= amount * 2:
@@ -45,11 +39,3 @@ def calculate_ques_gen(min, max, amount):
 
         i += 2
     return quest_list
-
-
-def brain_calc():
-    user_name = welcome_user()
-    calc_start()
-    ques_answ_list = calculate_ques_gen(min_num, max_num, amount_ques)
-    check_win_list = question_answer(ques_answ_list)
-    is_win(check_win_list, user_name)
