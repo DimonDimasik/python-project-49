@@ -44,7 +44,7 @@ def is_win(ques_list, name):
         print(f'Congratulations, {name}!')
     else:
         print(f"'{ques_list[1]}' is wrong answer ;(. Correct answer was '{ques_list[2]}'.")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
 
 
 def game_engine(ques_gen, min, max, amount, start):
