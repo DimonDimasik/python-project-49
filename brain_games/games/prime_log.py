@@ -3,37 +3,28 @@ from random import randint
 
 min_num = 2
 max_num = 100
-amount_ques = 3
 
 
-def prime_ques_gen(min, max, amount):
-    i = 1
-    num_list = []
-    while i <= amount:
-        num_list.append(randint(min, max))
-        i += 1
+def start():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-    i = 0
+
+def ques_gen(min, max):
     ques_list = []
-    while i < amount:
-        if num_list[i] == 2 or num_list[i] == 3:
-            question = num_list[i]
-            answer = 'yes'
+    question = randint(min, max)
+    if question == 2 or question == 3:
+        answer = 'yes'
+    else:
+        half = question // 2
+        for item in range(half, min - 1, -1):
+            if question % item == 0:
+                answer = 'no'
+                break
 
-        else:
-            half = num_list[i] // 2
-            question = num_list[i]
+            else:
+                answer = 'yes'
 
-            for item in range(half, min - 1, -1):
-                if num_list[i] % item == 0:
-                    answer = 'no'
-                    break
-
-                else:
-                    answer = 'yes'
-
-        ques_list.append(question)
-        ques_list.append(answer)
-        i += 1
+    ques_list.append(question)
+    ques_list.append(answer)
 
     return ques_list

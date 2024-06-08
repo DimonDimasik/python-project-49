@@ -3,39 +3,37 @@ from random import randint
 
 max_num = 100
 min_num = 1
-amount_ques = 3
 
 
-def gcd_ques_gen(max, min, amount):
+def start():
+    print('Find the greatest common divisor of given numbers.')
+
+
+def ques_gen(min, max):
     num_list = []
-    i = 1
-    while i <= amount * 2:
-        num_list.append(randint(min, max))
-        i += 1
+    num_list.append(randint(min, max))
+    num_list.append(randint(min, max))
 
     ques_list = []
-    i = 0
 
-    while i <= amount * 2 - 2:
-        question = f'{num_list[i]} {num_list[i + 1]}'
+    question = f'{num_list[0]} {num_list[1]}'
 
-        if num_list[i] == num_list[i + 1]:
-            answer = num_list[i]
+    if num_list[0] == num_list[1]:
+        answer = num_list[0]
 
-        elif num_list[i] > num_list[i + 1]:
-            for item in range(num_list[i], 0, -1):
-                if num_list[i] % item == 0 and num_list[i + 1] % item == 0:
-                    answer = item
-                    break
+    elif num_list[0] > num_list[1]:
+        for item in range(num_list[1], 0, -1):
+            if num_list[0] % item == 0 and num_list[1] % item == 0:
+                answer = item
+                break
 
-        elif num_list[i] < num_list[i + 1]:
-            for item in range(num_list[i + 1], 0, -1):
-                if num_list[i] % item == 0 and num_list[i + 1] % item == 0:
-                    answer = item
-                    break
+    elif num_list[0] < num_list[1]:
+        for item in range(num_list[0], 0, -1):
+            if num_list[0] % item == 0 and num_list[1] % item == 0:
+                answer = item
+                break
 
-        ques_list.append(question)
-        ques_list.append(str(answer))
-        i += 2
+    ques_list.append(question)
+    ques_list.append(str(answer))
 
     return ques_list
