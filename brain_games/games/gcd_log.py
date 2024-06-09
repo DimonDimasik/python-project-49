@@ -10,26 +10,25 @@ def start():
 
 
 def ques_gen(min, max):
-    num_list = []
-    num_list.append(randint(min, max))
-    num_list.append(randint(min, max))
+    first_num = randint(min, max)
+    second_num = randint(min, max)
 
     ques_list = []
 
-    question = f'{num_list[0]} {num_list[1]}'
+    question = f'{first_num} {second_num}'
 
-    if num_list[0] == num_list[1]:
-        answer = num_list[0]
+    if first_num == second_num:
+        answer = first_num
 
-    elif num_list[0] > num_list[1]:
-        for item in range(num_list[1], 0, -1):
-            if num_list[0] % item == 0 and num_list[1] % item == 0:
+    elif first_num > second_num:
+        for item in range(second_num, 0, -1):
+            if first_num % item == 0 and second_num % item == 0:
                 answer = item
                 break
 
-    elif num_list[0] < num_list[1]:
-        for item in range(num_list[0], 0, -1):
-            if num_list[0] % item == 0 and num_list[1] % item == 0:
+    elif first_num < second_num:
+        for item in range(first_num, 0, -1):
+            if first_num % item == 0 and second_num % item == 0:
                 answer = item
                 break
 
