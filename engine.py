@@ -3,6 +3,7 @@ from brain_games.cli import welcome_user
 
 rounds = 3
 
+
 def question_answer(ques_list):
     check_list = [None, None, None]
 
@@ -18,6 +19,16 @@ def question_answer(ques_list):
         check_list[2] = ques_list[1]
         return check_list
 
+
+def win(name):
+    print(f'Congratulations, {name}!')
+
+
+def loose(wrong, correct, name):
+    print(f"'{wrong}' is wrong answer ;(. Correct answer was '{correct}'.")
+    print(f"Let's try again, {name}!")
+
+
 def game_engine(module):
     user_name = welcome_user()
     i = 1
@@ -32,10 +43,9 @@ def game_engine(module):
 
         elif result_list[0] is True and i == rounds:
             print('Correct!')
-            print(f'Congratulations, {user_name}!')
+            win(user_name)
             break
 
         elif result_list[0] is False:
-            print(f"'{result_list[1]}' is wrong answer ;(. Correct answer was '{result_list[2]}'.")
-            print(f"Let's try again, {user_name}!")
+            loose(result_list[1], result_list[2], user_name)
             break
