@@ -10,7 +10,6 @@ def start():
 
 
 def question_answer():
-    progress_list = []
     max_step = 6
     lenght = 10
     next = randint(MIN, MAX)
@@ -28,7 +27,6 @@ def question_answer():
         next = next + step
         i += 1
 
-    progress_list.append(numbers)
-    progress_list.append(answer)
+    question = numbers
 
-    return progress_list
+    return question, answer

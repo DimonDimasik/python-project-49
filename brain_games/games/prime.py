@@ -9,22 +9,21 @@ def start():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
+def is_prime(number):
+    if number == 2 or number == 3:
+        return True
+    else:
+        half = number // 2
+        for item in range(MIN, half + 1):
+            if number % item == 0:
+                return False
+        return True
+
+
 def question_answer():
-    ques_list = []
     question = randint(MIN, MAX)
-    if question == 2 or question == 3:
+    if is_prime(question) is True:
         answer = 'yes'
     else:
-        half = question // 2
-        for item in range(half, MIN - 1, -1):
-            if question % item == 0:
-                answer = 'no'
-                break
-
-            else:
-                answer = 'yes'
-
-    ques_list.append(question)
-    ques_list.append(answer)
-
-    return ques_list
+        answer = 'no'
+    return question, answer

@@ -9,10 +9,10 @@ def start():
     print('Find the greatest common divisor of given numbers.')
 
 
-def gcd(num_1, num_2):
-    while num_2:
-        num_1, num_2 = num_2, num_1 % num_2
-    return num_1
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
 
 def question_answer():
