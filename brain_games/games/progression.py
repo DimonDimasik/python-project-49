@@ -1,21 +1,21 @@
 from random import randint
 
 
-min_num = 1
-max_num = 50
+MIN = 1
+MAX = 50
 
 
 def start():
     print('What number is missing in the progression?')
 
 
-def ques_gen(min, max):
+def question_answer():
     progress_list = []
     max_step = 6
     lenght = 10
-    next = randint(min, max)
-    step = randint(min + 1, max_step)
-    missed = randint(min, lenght)
+    next = randint(MIN, MAX)
+    step = randint(MIN + 1, max_step)
+    missed = randint(MIN, lenght)
     numbers = ''
     i = 1
 

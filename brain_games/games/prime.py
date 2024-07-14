@@ -1,22 +1,22 @@
 from random import randint
 
 
-min_num = 2
-max_num = 100
+MIN = 2
+MAX = 100
 
 
 def start():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def ques_gen(min, max):
+def question_answer():
     ques_list = []
-    question = randint(min, max)
+    question = randint(MIN, MAX)
     if question == 2 or question == 3:
         answer = 'yes'
     else:
         half = question // 2
-        for item in range(half, min - 1, -1):
+        for item in range(half, MIN - 1, -1):
             if question % item == 0:
                 answer = 'no'
                 break
