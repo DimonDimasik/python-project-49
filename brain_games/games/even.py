@@ -1,7 +1,7 @@
 from random import randint
 
 
-MIN = 2
+MIN = 1
 MAX = 100
 
 
@@ -10,14 +10,10 @@ def start():
 
 
 def is_even(number):
-    if number == 2 or number == 3:
+    if number % 2 == 0:
         return True
     else:
-        half = number // 2
-        for item in range(MIN, half + 1):
-            if number % item == 0:
-                return False
-        return True
+        return False
 
 
 def question_answer():
