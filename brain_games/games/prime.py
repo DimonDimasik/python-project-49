@@ -1,26 +1,35 @@
 from random import randint
+import math
 
 
-MIN = 2
+MIN = 1
 MAX = 100
-
-
-def start():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+START = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    if number == 2 or number == 3:
+    """
+    Checks if a number is prime
+    Keyword argument:
+    number: int
+    """
+    if number <= 1:
+        return False
+    if number == 2:
         return True
-    else:
-        half = number // 2
-        for item in range(MIN, half + 1):
-            if number % item == 0:
-                return False
-        return True
+    if number % 2 == 0:
+        return False
+    for i in range(3, int(math.sqrt(number)) + 1, 2):
+        if number % i == 0:
+            return False
+    return True
 
 
 def question_answer():
+    """
+    Returns a random number and the answer
+    to the question whether the number is prime
+    """
     question = randint(MIN, MAX)
     if is_prime(question) is True:
         answer = 'yes'

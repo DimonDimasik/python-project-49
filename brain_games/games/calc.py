@@ -4,22 +4,35 @@ from random import randint
 
 MIN = 1
 MAX = 15
+START = 'What is the result of the expression?'
 
 
-def start():
-    print('What is the result of the expression?')
-
-
-def calculation(expression):
-    result = eval(expression)
+def calculate(a, b, symbol):
+    """
+    Returns the result of an arithmetic operation
+    Keyword arguments:
+    a: int
+    b: int
+    symbol: str ('+', '-', '*')
+    """
+    if symbol == '+':
+        result = a + b
+    if symbol == '-':
+        result = a - b
+    if symbol == '*':
+        result = a * b
     return str(result)
 
 
 def question_answer():
+    """
+    Returns a random arithmetic operation
+    and the result of this operation
+    """
     a = randint(MIN, MAX)
     b = randint(MIN, MAX)
     actions_list = ['+', '-', '*']
     action = random.choice(actions_list)
     question = f'{a} {action} {b}'
-    answer = calculation(question)
+    answer = calculate(a, b, action)
     return question, answer

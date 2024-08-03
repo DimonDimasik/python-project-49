@@ -3,10 +3,7 @@ from random import randint
 
 MIN = 1
 MAX = 100
-
-
-def start():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+START = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):

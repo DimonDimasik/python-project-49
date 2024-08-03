@@ -3,30 +3,38 @@ from random import randint
 
 MIN = 1
 MAX = 50
+START = 'What number is missing in the progression?'
 
 
-def start():
-    print('What number is missing in the progression?')
+def progression():
+    """
+    Returns an arithmetic progression of
+    10 numbers in increments from 2 to 7
+    """
+    lenght = 10
+    numbers = []
+    step = randint(2, 7)
+    next = randint(MIN, MAX)
+    i = 1
+    while i <= lenght:
+        numbers.append(next)
+        next += step
+        i += 1
+    return numbers
 
 
 def question_answer():
-    max_step = 6
-    lenght = 10
-    next = randint(MIN, MAX)
-    step = randint(MIN + 1, max_step)
-    missed = randint(MIN, lenght)
-    numbers = ''
-    i = 1
-
-    while i <= lenght:
-        if i == missed:
-            numbers = numbers + '..' + ' '
-            answer = str(next)
-        else:
-            numbers = numbers + str(next) + ' '
-        next = next + step
-        i += 1
-
-    question = numbers
-
+    """
+    Removes a randomly selected number from
+    an arithmetic progression and returns the
+    progression and the removed number
+    """
+    missed = randint(0, 9)
+    num_list = progression()
+    answer = str(num_list[missed])
+    num_list[missed] = '..'
+    new_list = []
+    for i in num_list:
+        new_list.append(str(i))
+    question = ' '.join(new_list)
     return question, answer
