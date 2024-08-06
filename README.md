@@ -4,11 +4,11 @@
 
 # Brain-games
 
-## Brain-games are five mathematical games in which the player needs to answer three questions. 
-## If the player answers three questions correctly, he wins; if the player gives the wrong answer, the game ends with the player losing.
+### Brain-games are five mathematical games in which the player needs to answer three questions. 
+### If the player answers three questions correctly, he wins; if the player gives the wrong answer, the game ends with the player losing.
 
-
-## In the brain-even game the player must answer the question whether the number is even or not
+## Brain-even
+### In the brain-even game the player must answer the question whether the number is even or not
 
 ### Example of brain-even win:
 [![asciicast](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K.svg)](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K)
@@ -16,28 +16,36 @@
 ### Example of brain-even loss:
 [![asciicast](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2.svg)](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
 
-## In the brain-calc game, the player must determine the result of a mathematical operation
-[example of brain-calc win](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
+### In the brain-calc game, the player must determine the result of a mathematical operation
+### Example of brain-calc win:
+[![asciicast](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0.svg)](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
 
-[example of brain-calc loss](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
+### Example of brain-calc loss:
+[![asciicast](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg.svg)](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
 
 ## In the brain-gcd game the player must find the greatest common divisor of two numbers
-[example of brain-gcd win](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9)
+### Example of brain-gcd win:
+[![asciicast](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9.svg)](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9)
 
-[example of brain-gcd loss](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
+### Example of brain-gcd loss:
+[![asciicast](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm.svg)](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
 
 ## In the brain-progression game the player must determine which number is missing in the arithmetic progression
-[example of brain-progression win](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd)
+### Example of brain-progression win:
+[![asciicast](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd.svg)](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd)
 
-[example of brain-progression loss](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
+### Example of brain-progression loss:
+[![asciicast](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW.svg)](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
 
 ## In the brain-prime game the player must answer the question whether the number is prime or not
-[example of brain-prime win](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el)
+### Example of brain-prime win:
+[![asciicast](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el.svg)](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el)
 
-[example of brain-prime loss](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx)
+### Example of brain-prime loss:
+[![asciicast](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx.svg)](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx)
 
 
 ## Dependencies:
-## python = "^3.10"
-## prompt = "^0.4.1"
-## flake8 = "^7.0.0"
+* python = "^3.10"
+* prompt = "^0.4.1"
+* flake8 = "^7.0.0"
