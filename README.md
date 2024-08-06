@@ -16,6 +16,7 @@
 ### Example of brain-even loss:
 [![asciicast](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2.svg)](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
 
+## Brain-calc
 ### In the brain-calc game, the player must determine the result of a mathematical operation
 ### Example of brain-calc win:
 [![asciicast](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0.svg)](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
@@ -23,21 +24,24 @@
 ### Example of brain-calc loss:
 [![asciicast](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg.svg)](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
 
-## In the brain-gcd game the player must find the greatest common divisor of two numbers
+## Brain-gcd
+### In the brain-gcd game the player must find the greatest common divisor of two numbers
 ### Example of brain-gcd win:
 [![asciicast](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9.svg)](https://asciinema.org/a/DOtRw1bCGIH2uKoZGFxnSiXS9)
 
 ### Example of brain-gcd loss:
 [![asciicast](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm.svg)](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
 
-## In the brain-progression game the player must determine which number is missing in the arithmetic progression
+## Brain-progression
+### In the brain-progression game the player must determine which number is missing in the arithmetic progression
 ### Example of brain-progression win:
 [![asciicast](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd.svg)](https://asciinema.org/a/Whgnps5ohJST99NgOT7wR9tSd)
 
 ### Example of brain-progression loss:
 [![asciicast](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW.svg)](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
 
-## In the brain-prime game the player must answer the question whether the number is prime or not
+## Brain-prime
+### In the brain-prime game the player must answer the question whether the number is prime or not
 ### Example of brain-prime win:
 [![asciicast](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el.svg)](https://asciinema.org/a/SntkXAxxOOanValiz9kATB3el)
 
