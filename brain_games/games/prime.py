@@ -4,7 +4,7 @@ import math
 
 MIN = 1
 MAX = 100
-START = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -25,7 +25,7 @@ def is_prime(number):
     return True
 
 
-def question_answer():
+def generate():
     """
     Returns a random number and the answer
     to the question whether the number is prime

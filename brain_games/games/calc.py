@@ -4,7 +4,7 @@ from random import randint
 
 MIN = 1
 MAX = 15
-START = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def calculate(a, b, symbol):
@@ -21,10 +21,10 @@ def calculate(a, b, symbol):
         result = a - b
     if symbol == '*':
         result = a * b
-    return str(result)
+    return result
 
 
-def question_answer():
+def generate():
     """
     Returns a random arithmetic operation
     and the result of this operation

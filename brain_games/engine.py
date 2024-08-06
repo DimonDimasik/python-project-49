@@ -36,13 +36,13 @@ def game_engine(module):
     """
     user_name = welcome_user()
     i = 1
-    print(module.START)
+    print(module.DESCRIPTION)
     while i <= ROUNDS:
-        ques_list = module.question_answer()
+        ques_list = module.generate()
         print(f'Question: {ques_list[0]}')
         user_answer = input('Your answer: ')
 
-        if user_answer == ques_list[1]:
+        if user_answer == str(ques_list[1]):
             print('Correct!')
             if i == 3:
                 win(user_name)

@@ -3,7 +3,7 @@ from random import randint
 
 MIN = 1
 MAX = 100
-START = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(a, b):
@@ -12,9 +12,9 @@ def gcd(a, b):
     return a
 
 
-def question_answer():
+def generate():
     first_num = randint(MIN, MAX)
     second_num = randint(MIN, MAX)
     question = f'{first_num} {second_num}'
-    answer = str(gcd(first_num, second_num))
+    answer = gcd(first_num, second_num)
     return question, answer

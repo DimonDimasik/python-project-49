@@ -3,7 +3,7 @@ from random import randint
 
 MIN = 1
 MAX = 100
-START = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
@@ -13,7 +13,7 @@ def is_even(number):
         return False
 
 
-def question_answer():
+def generate():
     question = randint(MIN, MAX)
     if is_even(question) is True:
         answer = 'yes'
