@@ -10,11 +10,11 @@
 
 ## In the brain-even game the player must answer the question whether the number is even or not
 
+### Example of brain-even win:
 [![asciicast](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K.svg)](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K)
 
-[example of brain-even win](https://asciinema.org/a/KmtQLzXmeqKbqGeCr55japq8K)
-
-[example of brain-even loss](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
+### Example of brain-even loss:
+[![asciicast](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2.svg)](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
 
 ## In the brain-calc game, the player must determine the result of a mathematical operation
 [example of brain-calc win](https://asciinema.org/a/pylHZ9mlugqw6WXhUEJX6tbc0)
