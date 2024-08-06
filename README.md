@@ -2,10 +2,17 @@
 [![Actions Status](https://github.com/DimonDimasik/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DimonDimasik/python-project-49/actions)
 <a href="https://codeclimate.com/github/DimonDimasik/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/86184d5727f28ce865bc/maintainability" /></a>
 
+## Dependencies:
+* python = "^3.10"
+* prompt = "^0.4.1"
+* flake8 = "^7.0.0"
+
+
 # Brain-games
 
 ### Brain-games are five mathematical games in which the player needs to answer three questions. 
-### If the player answers three questions correctly, he wins; if the player gives the wrong answer, the game ends with the player losing.
+### To win each game, the player must answer all three questions correctly. If the player gives the wrong answer, the game ends with the player losing.
+
 
 ## Brain-even
 ### In the brain-even game the player must answer the question whether the number is even or not
@@ -16,6 +23,7 @@
 ### Example of brain-even loss:
 [![asciicast](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2.svg)](https://asciinema.org/a/K4tWDs6jJ6jhe3aSsnCl4Noc2)
 
+
 ## Brain-calc
 ### In the brain-calc game, the player must determine the result of a mathematical operation
 ### Example of brain-calc win:
@@ -23,6 +31,7 @@
 
 ### Example of brain-calc loss:
 [![asciicast](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg.svg)](https://asciinema.org/a/OGZs9oSRHNY2l6CPaSpeSiXWg)
+
 
 ## Brain-gcd
 ### In the brain-gcd game the player must find the greatest common divisor of two numbers
@@ -32,6 +41,7 @@
 ### Example of brain-gcd loss:
 [![asciicast](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm.svg)](https://asciinema.org/a/MW67xGddIneFLAOzp6aAOW6hm)
 
+
 ## Brain-progression
 ### In the brain-progression game the player must determine which number is missing in the arithmetic progression
 ### Example of brain-progression win:
@@ -39,6 +49,7 @@
 
 ### Example of brain-progression loss:
 [![asciicast](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW.svg)](https://asciinema.org/a/tPQkrlKregzJE8JlGkGwCRppW)
+
 
 ## Brain-prime
 ### In the brain-prime game the player must answer the question whether the number is prime or not
@@ -48,8 +59,3 @@
 ### Example of brain-prime loss:
 [![asciicast](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx.svg)](https://asciinema.org/a/bFEXbOCEEtbY4UhXg8VYQj4Lx)
 
-
-## Dependencies:
-* python = "^3.10"
-* prompt = "^0.4.1"
-* flake8 = "^7.0.0"
