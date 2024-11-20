@@ -7,7 +7,7 @@ ROUNDS = 3
 def win(name):
     """
     Displays congratulations to the player
-    Keyword arguments:
+    Positional arguments:
     name: str
     """
     print(f'Congratulations, {name}!')
@@ -16,7 +16,7 @@ def win(name):
 def loose(wrong, correct, name):
     """
     Displays a message about the player's loss
-    Keyword arguments:
+    Positional arguments:
     wrong: str
     correct: str
     name: str
@@ -31,7 +31,7 @@ def game_engine(module):
     user's answer and compares it with the correct answer. If the answer
     is wrong, the game ends; if the answer is correct, it continues until
     the last round.
-    Keyword arguments:
+    Argument:
     module: module
     """
     user_name = welcome_user()

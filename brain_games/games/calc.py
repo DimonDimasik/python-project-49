@@ -10,7 +10,7 @@ DESCRIPTION = 'What is the result of the expression?'
 def calculate(a, b, symbol):
     """
     Returns the result of an arithmetic operation
-    Keyword arguments:
+    Positional arguments:
     a: int
     b: int
     symbol: str ('+', '-', '*')
